@@ -9,7 +9,7 @@ import _ from 'lodash';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { faSignOutAlt, faGlobe, faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { promisify } from 'util';
 import CIcon from '../Icon/Icon';
@@ -191,16 +191,18 @@ const SideBar = props => {
       <div className={styles.socialsContainer}>
         {/* eslint-disable */}
         {/* <SocialIcon icon="twitter" url="https://twitter.com/gorilladevs" /> */}
-        <SocialIcon icon={faFacebook} url="https://facebook.com/gorilladevs" />
         <SocialIcon
           icon={faDiscord}
-          url="https://discordapp.com/invite/4cGYzen"
+          url="https://discord.gg/8vF9PYM"
         />
-        <span className={styles.version}>
-          <Link to={{ pathname: '/changelogs', state: { modal: true } }}>
-            v{require('../../../../package.json').version}
-          </Link>
-        </span>
+        <SocialIcon
+          icon={faGlobe}
+          url="https://arsenalnetwork.net/"
+        />
+        <SocialIcon
+          icon={faShoppingBag}
+          url="https://store.arsenalnetwork.net/"
+        />
         {/* eslint-enable */}
       </div>
     </aside>

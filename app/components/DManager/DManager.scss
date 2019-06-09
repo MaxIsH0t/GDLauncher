@@ -3,9 +3,10 @@
 .header {
   position: relative;
   background: linear-gradient( rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.4)), url("../../assets/images/AN-Logo.png");
-  background-position: center left;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  // background-size: cover;
+  background-size: 63%;
   height: 180px;
   width: 100%;
 }
