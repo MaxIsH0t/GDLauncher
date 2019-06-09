@@ -60,7 +60,7 @@ const NewUserPage = props => {
                 ...internalDivStyles[state]
               }}
             >
-              <h1 style={{ fontSize: 37 }}>Welcome to GDLauncher!</h1>
+              <h1 style={{ fontSize: 37 }}>Welcome to Arsenal Launcher!</h1>
               <div style={{ display: 'flex' }}>
                 <p style={{ fontSize: 25 }}>
                   Hello {props.username}!<br />

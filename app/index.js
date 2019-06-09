@@ -12,7 +12,7 @@ if (module.hot)
     pureRender: true // RHL will not change render method
   });
 const store = configureStore();
-log.info('Welcome to GDLauncher');
+log.info('Welcome to Arsenal Launcher!');
 render(
   <AppContainer>
     <Root store={store} history={history} />
