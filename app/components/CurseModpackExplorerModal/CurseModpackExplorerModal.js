@@ -3,6 +3,7 @@ import ContentLoader from 'react-content-loader';
 import axios from 'axios';
 import { Button } from 'antd';
 import log from 'electron-log';
+import Link from 'react-router-dom/Link';
 import ReactHtmlParser from 'react-html-parser';
 import ProgressiveImage from 'react-progressive-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,6 +11,7 @@ import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
 import Modal from '../Common/Modal/Modal';
 import { numberToRoundedWord } from '../../utils/numbers';
 import { useGetAddon, useGetAddonDescription } from '../../hooks/cursemeta';
+import CurseModpackExplorerModal from '../CurseModpackExplorerModal/CurseModpackExplorerModal';
 import styles from './CurseModpackExplorerModal.scss';
 
 const Loader = () => (
@@ -33,7 +35,8 @@ const Loader = () => (
 );
 
 export default props => {
-  const { addonID } = props.match.params;
+  // const { addonID } = props.match.params;
+  const addonID = 294669;
   const [unMount, setUnMount] = useState(false);
   const response = useGetAddon(addonID);
   const description = useGetAddonDescription(addonID);
@@ -115,12 +118,26 @@ export default props => {
             </span>
           </span>
           <div className={styles.description}>
+            <Link
+              to={{
+                pathname: `/curseModpackBrowserCreatorModal/294669`,
+                state: { modal: true }
+              }}
+            >
+              <Button
+                type="primary"
+                icon="download"
+                style={{ marginBottom: '4%' }}
+              >
+                Download
+              </Button>
+            </Link>
             {ReactHtmlParser(description)}
           </div>
         </div>
       ) : (
-          <Loader />
-        )}
+        <Loader />
+      )}
     </Modal>
   );
 };
