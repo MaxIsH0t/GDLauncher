@@ -53,7 +53,7 @@ export default props => {
             className={styles.a}
           >
             <FontAwesomeIcon icon={faDownload} className={styles.i} />
-            DOWNLOAD
+            OFFICIAL MODPACK
           </Link>
         </li>
       </ul>

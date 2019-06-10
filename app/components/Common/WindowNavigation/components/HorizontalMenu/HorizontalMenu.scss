@@ -38,8 +38,25 @@
       }
     }
   }
+  .a:last-child {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+    line-height: 40px;
+    color: $link-text-color;
+    text-align: center;
+    /* padding: 9px 16px 10px 16px; */
+    text-decoration: none;
+    cursor: pointer;
+    svg {
+      cursor: pointer;
+      path {
+        cursor: pointer;
+      }
+    }
+  }
 }
-
 
 .i {
   margin: 0 5px 0 0;
