@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog } from '@fortawesome/free-solid-svg-icons';
 import styles from './NavigationBar.scss';
 import HorizontalMenu from './components/HorizontalMenu/HorizontalMenu';
-import logo from '../../../assets/images/arsenalLogo.png';
+import logo from '../../../assets/images/logo.png';
 
 export default props => {
   const [updateAvailable, setUpdateAvailable] = useState(false);

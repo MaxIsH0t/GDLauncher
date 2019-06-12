@@ -125,7 +125,7 @@ if (minimist(process.argv.slice(1)).i) {
     });
 
     mainWindow.loadURL(`file://${__dirname}/app.html`, {
-      userAgent: 'GDLauncher'
+      userAgent: 'Arsenal Launcher'
     });
 
     // @TODO: Use 'ready-to-show' event
@@ -142,11 +142,11 @@ if (minimist(process.argv.slice(1)).i) {
       let rpc = new DiscordRPC.Client({ transport: 'ipc' });
       rpc.once('ready', () => {
         rpc.setActivity({
-          details: `Becoming a Gorilla`,
+          details: `Becoming an Arsenal Users`,
           state: 'Grrrrrrrr',
           startTimestamp: Math.floor(Date.now() / 1000),
           largeImageKey: 'default_big',
-          largeImageText: 'GDLauncher - A Custom Minecraft Launcher',
+          largeImageText: 'Arsenal Launcher - A Custom Minecraft Launcher',
           instance: false,
         });
       });
