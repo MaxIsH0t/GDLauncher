@@ -66,7 +66,7 @@ const NewUserPage = props => {
               <div style={{ display: 'flex' }}>
                 <p style={{ fontSize: 25 }}>
                   {t('helloUser', 'Hello {props.username}!')}<br />
-                  {t('GDLauncherOpenSource', 'GDLauncher is free and open source, it wouldn\'t exist without its community. If you find any bug or have any suggestion, tell us on Discord!')}
+                  {t('GDLauncherOpenSource', 'Arsenal Launcher is free and open source, it wouldn\'t exist without its community. If you find any bug or have any suggestion, tell us on Discord!')}
                   <br />
                   <br />
                   {t('HappyGaming', 'Happy gaming!')}

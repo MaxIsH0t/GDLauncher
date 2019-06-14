@@ -1,7 +1,7 @@
 {
   "name": "gdlauncher",
   "version": "0.11.13-beta",
-  "description": "GDLauncher is simple, yet powerful Minecraft custom launcher with a strong focus on the user experience",
+  "description": "Arsenal Launcher is simple, yet powerful Minecraft custom launcher with a strong focus on the user experience",
   "keywords": [
     "minecraft",
     "launcher",
@@ -13,13 +13,13 @@
     "sass",
     "webpack"
   ],
-  "homepage": "https://github.com/gorilla-devs/GDLauncher",
+  "homepage": "https://github.com/gorilla-devs/Arsenal Launcher",
   "bugs": {
-    "url": "https://github.com/gorilla-devs/GDLauncher/issues"
+    "url": "https://github.com/gorilla-devs/Arsenal Launcher/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gorilla-devs/GDLauncher.git"
+    "url": "git+https://github.com/gorilla-devs/Arsenal Launcher.git"
   },
   "license": "MIT",
   "author": {
@@ -247,8 +247,8 @@
   "browserslist": "electron 1.6",
   "build": {
     "generateUpdatesFilesForAllChannels": true,
-    "productName": "GDLauncher",
-    "appId": "org.gorilladevs.GDLauncher",
+    "productName": "Arsenal Launcher",
+    "appId": "org.gorilladevs.Arsenal Launcher",
     "files": [
       "!node_modules",
       "app/splash.html",
@@ -305,7 +305,7 @@
     "publish": {
       "provider": "github",
       "owner": "gorilla-devs",
-      "repo": "GDLauncher",
+      "repo": "Arsenal Launcher",
       "private": false
     }
   },
@@ -334,5 +334,5 @@
       "git add"
     ]
   },
-  "productName": "GDLauncher"
+  "productName": "Arsenal Launcher"
 }

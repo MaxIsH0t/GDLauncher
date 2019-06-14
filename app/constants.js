@@ -12,7 +12,7 @@ export const APPPATH = getAppPath();
 export const DATAPATH = path.join(
   process.env.APPDATA ||
     (electron.app || electron.remote.app).getPath('userData'),
-  'GDLauncher'
+  'Arsenal Launcher'
 );
 export const CLASSPATH_DIVIDER_CHAR = platform() === WINDOWS ? ';' : ':';
 export const LAUNCHER_FOLDER = 'launcherData';
@@ -34,7 +34,6 @@ export const ACCESS_TOKEN_REFRESH_URL = 'https://authserver.mojang.com/refresh';
 
 export const MAVEN_REPO = 'http://central.maven.org/maven2';
 export const MC_LIBRARIES_URL = 'https://libraries.minecraft.net';
-export const GDL_COMPANION_MOD_URL = 'https://gdevs.io/GDLCompanion.jar';
 export const GDL_LEGACYJAVAFIXER_MOD_URL =
   'https://gdevs.io/legacyjavafixer-1.0.jar';
 export const CURSEMETA_API_URL = `https://addons-ecs.forgesvc.net/api/v2`;
@@ -51,7 +50,7 @@ export const DEFAULT_ARGS = `-Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInv
 } -Xms256m`;
 export const DEFAULT_MEMORY = 4096;
 export const UPDATE_URL =
-  'https://raw.githubusercontent.com/gorilla-devs/GDLauncher/master/package.json';
+  'https://raw.githubusercontent.com/gorilla-devs/Arsenal Launcher/master/package.json';
 export const THEMES = {
   default: {
     name: 'Default',

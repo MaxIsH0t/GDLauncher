@@ -1,17 +1,17 @@
-# GDLauncher
+# Arsenal Launcher
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub issues](https://img.shields.io/github/issues-raw/gorilla-devs/GDLauncher.svg)](https://github.com/gorilla-devs/GDLauncher/issues) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/213eb618fa59424fba7ccfcd4f1b6a09)](https://www.codacy.com/app/gorilla-devs/GDLauncher?utm_source=github.com&utm_medium=referral&utm_content=gorilla-devs/GDLauncher&utm_campaign=Badge_Grade) [![GitHub pull requests](https://img.shields.io/github/issues-pr/gorilla-devs/GDLauncher.svg)](https://github.com/gorilla-devs/GDLauncher/pulls)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub issues](https://img.shields.io/github/issues-raw/gorilla-devs/Arsenal Launcher.svg)](https://github.com/gorilla-devs/Arsenal Launcher/issues) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/213eb618fa59424fba7ccfcd4f1b6a09)](https://www.codacy.com/app/gorilla-devs/Arsenal Launcher?utm_source=github.com&utm_medium=referral&utm_content=gorilla-devs/Arsenal Launcher&utm_campaign=Badge_Grade) [![GitHub pull requests](https://img.shields.io/github/issues-pr/gorilla-devs/Arsenal Launcher.svg)](https://github.com/gorilla-devs/Arsenal Launcher/pulls)
 
-[![PRs Welcome](https://img.shields.io/github/license/gorilla-devs/GDLauncher.svg)](http://makeapullrequest.com) [![Travis](https://travis-ci.com/gorilla-devs/GDLauncher.svg?branch=master)](https://travis-ci.com/gorilla-devs/GDLauncher) ![Discord](https://img.shields.io/discord/398091532881756161.svg) ![David](https://img.shields.io/david/gorilla-devs/GDLauncher.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/gorilla-devs/GDLauncher.svg)
+[![PRs Welcome](https://img.shields.io/github/license/gorilla-devs/Arsenal Launcher.svg)](http://makeapullrequest.com) [![Travis](https://travis-ci.com/gorilla-devs/Arsenal Launcher.svg?branch=master)](https://travis-ci.com/gorilla-devs/Arsenal Launcher) ![Discord](https://img.shields.io/discord/398091532881756161.svg) ![David](https://img.shields.io/david/gorilla-devs/Arsenal Launcher.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/gorilla-devs/Arsenal Launcher.svg)
 
-![](https://img.shields.io/github/release/gorilla-devs/GDLauncher.svg?style=flat)
-![Github All Releases](https://img.shields.io/github/downloads/gorilla-devs/GDLauncher/total.svg)
+![](https://img.shields.io/github/release/gorilla-devs/Arsenal Launcher.svg?style=flat)
+![Github All Releases](https://img.shields.io/github/downloads/gorilla-devs/Arsenal Launcher/total.svg)
 [![Read the Docs (version)](https://img.shields.io/readthedocs/gdlauncher/master.svg)](https://gdlauncher.readthedocs.io/en/master/)
 
 <p align="center">
-    <img width="800" height="auto" src="https://i.imgur.com/kxeGu3f.png" alt="GDLauncher" />
+    <img width="800" height="auto" src="https://i.imgur.com/kxeGu3f.png" alt="Arsenal Launcher" />
 </p>
 
 <details>
@@ -31,9 +31,9 @@
 - [Todos](#-todos)
   </details>
 
-<b>This project was previously developed in C#. That version is now outdated and not mantained but you can find the code [here](https://github.com/gorilla-devs/GDLauncher/tree/csharp_legacy_launcher)</b>
+<b>This project was previously developed in C#. That version is now outdated and not mantained but you can find the code [here](https://github.com/gorilla-devs/Arsenal Launcher/tree/csharp_legacy_launcher)</b>
 
-GDLauncher is a custom open source Minecraft launcher written from the ground up in electron/react. Its main goal is to make it easy and enjoyable to manage different Minecraft versions and servers, bringing the playing and modding experience to the next level!
+Arsenal Launcher is a custom open source Minecraft launcher written from the ground up in electron/react. Its main goal is to make it easy and enjoyable to manage different Minecraft versions and servers, bringing the playing and modding experience to the next level!
 
 ## 🚀 Getting Started
 
@@ -41,7 +41,7 @@ Below you will find everything you need to know about the launcher. If you want 
 
 ## 🎮 Download
 
-To download the latest version, you can either click [here](https://github.com/gorilla-devs/GDLauncher/releases) and select the appropriate version for your operating system, or visit our [website](https://gdevs.io).
+To download the latest version, you can either click [here](https://github.com/gorilla-devs/Arsenal Launcher/releases) and select the appropriate version for your operating system, or visit our [website](https://gdevs.io).
 
 ## 🎨 Features (Working on)
 
@@ -80,7 +80,7 @@ You need the following softwares installed:
 Install the dependencies and devDependencies.
 
 ```sh
-$ cd GDLauncher
+$ cd Arsenal Launcher
 $ yarn
 ```
 
@@ -144,7 +144,7 @@ We use [SemVer](http://semver.org/) as versioning system.
 
 - **Davide Ceschia** - _Initial work_ - [GorillaDevs](https://github.com/gorilla-devs)
 
-See also the list of [contributors](https://github.com/gorilla-devs/GDLauncher/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/gorilla-devs/Arsenal Launcher/contributors) who participated in this project.
 
 ## 🎓 License
 
@@ -153,4 +153,4 @@ This project is licensed under the GNU GPL V3.0 - see the [LICENSE](LICENSE) fil
 ## ✏️ Todos
 
 Here is the complete list of things we want to do. If you want to help us doing them or want to suggest some new ideas, comment here!
-[TODOS/IDEAS](https://github.com/gorilla-devs/GDLauncher/issues/70)
+[TODOS/IDEAS](https://github.com/gorilla-devs/Arsenal Launcher/issues/70)
