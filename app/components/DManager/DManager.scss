@@ -2,10 +2,11 @@
 
 .header {
   position: relative;
-  background: linear-gradient( rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.4)), url("../../assets/images/dmanagerBG.jpg");
-  background-position: center left;
+  background: linear-gradient( rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.4)), url("../../assets/images/AN-Logo.png");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  // background-size: cover;
+  background-size: 63%;
   height: 180px;
   width: 100%;
 }
@@ -28,7 +29,7 @@
   width: 44vw;
   text-align: center;
   position: relative;
-  top: 40px;
+  top: 70px;
   a:hover {
     text-decoration: none; 
   }

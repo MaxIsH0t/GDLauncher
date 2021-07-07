@@ -37,7 +37,7 @@ const ModsList = props => {
   useEffect(() => {
     try {
       loadInstalledMods();
-    } catch {}
+    } catch { }
   }, [props.localMods]);
 
   const loadInstalledMods = async () => {
@@ -49,23 +49,24 @@ const ModsList = props => {
 
   // The "e" param is just used for invoking this function without params in events handlers
   const loadMoreMods = async (e, v, searchQueryP, reset) => {
-    searchQueryP = searchQueryP !== undefined ? searchQueryP : searchQuery;
-    reset = reset !== undefined ? reset : false;
-    if (reset === true) {
+    const search = searchQueryP || searchQuery;
+    const isReset = reset !== undefined ? reset : false;
+    if (reset) {
       setMods([]);
     }
     setAreModsLoading(true);
     const data = await getSearch(
       'mods',
-      searchQueryP,
+      search,
       21,
-      reset === true ? 0 : mods.length,
+      isReset ? 0 : mods.length,
       filterType,
       filterType !== 'Author' && filterType !== 'Name',
       props.match.params.version
     );
-    setMods(reset === true ? data : mods.concat(data));
-    setHasNextPage(data.length === 21);
+    const newMods = reset ? data : mods.concat(data);
+    setMods(newMods || []);
+    setHasNextPage((newMods || []).length === 21);
     setAreModsLoading(false);
   };
 
@@ -127,7 +128,7 @@ const ModsList = props => {
         version={props.match.params.version}
         instance={props.match.params.instance}
       />
-      {mods.length === 0 && !areModsLoading && (
+      {mods.length === 0 && !areModsLoading && searchQuery !== "" && (
         <div className={styles.modsNotFound}>
           <div>
             <h1>Oops :|</h1>
@@ -135,6 +136,15 @@ const ModsList = props => {
             We couldn't find any mod matching your criteria: <br />
             <br />
             <span>"{searchQuery}"</span>
+          </div>
+        </div>
+      )}
+      {mods.length === 0 && !areModsLoading && searchQuery === "" && (
+        <div className={styles.modsNotFound}>
+          <div>
+            <h1>Oops :|</h1>
+            <br />
+            Looks like our servers are not working... Try again later
           </div>
         </div>
       )}

@@ -34,6 +34,7 @@ type Props = {
   selectedInstance: ?string,
   startInstance: () => void,
   selectInstance: () => void,
+  repairInstance: () => void,
   playing: array
 };
 
@@ -293,7 +294,7 @@ export default class DInstance extends Component<Props> {
               exec(
                 `powershell $s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\\Desktop\\${name}.lnk');$s.TargetPath='${path.join(
                   APPPATH,
-                  'GDLauncher.exe'
+                  'Arsenal Launcher.exe'
                 )}';$s.Arguments='-i ${name}';$s.Save()`,
                 error => {
                   if (error) {
@@ -302,7 +303,7 @@ export default class DInstance extends Component<Props> {
                       <span>
                         Error while crerating the shortcut. Click{' '}
                         <a
-                          href="https://github.com/gorilla-devs/GDLauncher/wiki/Error-while-creating-an-instance's-shortcut"
+                          href="https://github.com/gorilla-devs/Arsenal Launcher/wiki/Error-while-creating-an-instance's-shortcut"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -352,19 +353,19 @@ export default class DInstance extends Component<Props> {
             </span>{' '}
             Export
           </MenuItem>
-          {/* <MenuItem
+          <MenuItem
             disabled={
               this.isInstalling() ||
               !isValid ||
               playing.find(el => el.name === name)
             }
-            onClick={() => this.props.addToQueue(name, version, forgeVersion)}
+            onClick={() => this.props.repairInstance(name)}
           >
             <span>
               <FontAwesomeIcon icon={faWrench} />
             </span>{' '}
             Repair
-          </MenuItem> */}
+          </MenuItem>
           <MenuItem
             disabled={
               this.isInstalling() || playing.find(el => el.name === name)

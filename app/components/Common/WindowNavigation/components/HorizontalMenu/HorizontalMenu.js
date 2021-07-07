@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, Icon, Button } from 'antd';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faPlay, faThList } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faPlay, faThList, faDownload } from '@fortawesome/free-solid-svg-icons';
 import Badge from '../../../Badge/Badge';
 import styles from './HorizontalMenu.scss';
 import logo from '../../../../../assets/images/logo.png';
@@ -41,18 +41,21 @@ export default props => {
         </li>
         <li
           className={`${styles.li} ${
-            isLocation('/curseModpacksBrowser') ? styles.activeLink : null
+            isLocation('/curseModpackExplorerModal') ? styles.activeLink : null
           }`}
         >
           <Link
-            to="/curseModpacksBrowser"
+            to={{
+              pathname: `/curseModpackExplorerModal/294669`,
+              state: { modal: true },
+            }}
             draggable="false"
             className={styles.a}
           >
-            <FontAwesomeIcon icon={faThList} className={styles.i} />
-            MODPACKS
+            <FontAwesomeIcon icon={faDownload} className={styles.i} />
+            OFFICIAL MODPACK
           </Link>
-        </li>   
+        </li>
       </ul>
     </div>
   );
